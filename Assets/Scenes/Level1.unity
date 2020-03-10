@@ -586,6 +586,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 36de80f7a25b541b4bcb3e631fdd6cde, type: 2}
   - {fileID: 11400000, guid: ab6bfce021d724a5db1dce309658c02a, type: 2}
   - {fileID: 11400000, guid: c467db68ec95941b2985fa4f63fa01dd, type: 2}
+  startingWave: 0
+  looping: 1
 --- !u!4 &1590343149
 Transform:
   m_ObjectHideFlags: 0
