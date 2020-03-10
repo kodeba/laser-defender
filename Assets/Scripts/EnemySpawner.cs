@@ -5,12 +5,17 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] List<WaveConfig> waveConfigs;
-    int startingWave = 0;
+    [SerializeField] int startingWave = 0;
+    [SerializeField] bool looping = false;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        StartCoroutine(SpawnAllWave());
+        do
+        {
+            yield return StartCoroutine(SpawnAllWave());
+        }
+        while (looping);
     }
 
     private IEnumerator SpawnAllWave()
