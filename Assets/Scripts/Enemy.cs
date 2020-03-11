@@ -25,10 +25,15 @@ public class Enemy : MonoBehaviour
         {
             health -= damageDealer.GetDamage();
             damageDealer.Hit();
-            if(health <= 0)
-            {
-                Destroy(gameObject);
-            }
+            HealthCheck();
+        }
+    }
+
+    private void HealthCheck()
+    {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
