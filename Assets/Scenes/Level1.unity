@@ -685,27 +685,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1141727259190904942, guid: 9b080bce939e14884b19af3ce83a7c5f,
-        type: 3}
-      propertyPath: waypoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1141727259190904942, guid: 9b080bce939e14884b19af3ce83a7c5f,
-        type: 3}
-      propertyPath: waypoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1141727259190904942, guid: 9b080bce939e14884b19af3ce83a7c5f,
-        type: 3}
-      propertyPath: waypoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1141727259190904942, guid: 9b080bce939e14884b19af3ce83a7c5f,
-        type: 3}
-      propertyPath: waveConfig
-      value: 
-      objectReference: {fileID: 11400000, guid: 171daf76676a4485c9ece795504bd402,
-        type: 2}
     - target: {fileID: 1141727259190904943, guid: 9b080bce939e14884b19af3ce83a7c5f,
         type: 3}
       propertyPath: m_LocalPosition.x
