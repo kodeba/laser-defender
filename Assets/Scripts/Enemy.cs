@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         DamageDealer damageDealer = collision.gameObject.GetComponent<DamageDealer>();
-        if(damageDealer != null)
+        if(damageDealer != null && collision.tag == "PlayerLaser")
         {
             health -= damageDealer.GetDamage();
             damageDealer.Hit();

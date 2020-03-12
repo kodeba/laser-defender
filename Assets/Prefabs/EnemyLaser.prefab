@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8479109732852641811}
   - component: {fileID: 5585991874195219378}
   - component: {fileID: 2942058339983837913}
+  - component: {fileID: -4616503733647775607}
   m_Layer: 0
   m_Name: EnemyLaser
-  m_TagString: Untagged
+  m_TagString: EnemyLaser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 96fc69b9548234c9a97bc1d1d4efb6f8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a2e0810407d0d4893ae9c833cb4219da, type: 3}
+  m_Color: {r: 1, g: 0.7466017, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13, y: 0.37}
   m_EdgeRadius: 0
+--- !u!114 &-4616503733647775607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3099838348706321012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d11f33ae53640e1aecc83682a70dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
