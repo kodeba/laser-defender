@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 20f;
     [SerializeField] float fireProjectilePeriod = 0.1f;
+    [SerializeField] GameObject deathVFX;
 
     // Start is called before the first frame update
     void Start()
@@ -56,8 +57,15 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+        Destroy(explosion, 1f);
     }
 
 }

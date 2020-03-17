@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8434182233845484673}
   - component: {fileID: 5500298488712451436}
   - component: {fileID: 5531861671485301077}
+  - component: {fileID: 6498487004780830949}
   m_Layer: 9
   m_Name: Enemy2
   m_TagString: Untagged
@@ -115,3 +116,21 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 20
   fireProjectilePeriod: 0.1
+  deathVFX: {fileID: 4792869308660933621, guid: beaed8c38a398462ea9ccb06e9bc42d5,
+    type: 3}
+--- !u!58 &6498487004780830949
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4217801175153871199}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.485
