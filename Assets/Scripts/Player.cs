@@ -101,6 +101,7 @@ public class Player : MonoBehaviour
     {
         if (health <= 0)
         {
+            FindObjectOfType<Level>().LoadGameOver();
             Destroy(gameObject);
             AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
         }
