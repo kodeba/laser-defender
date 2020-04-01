@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] [Range(0,1)] float deathSoundVolume = 0.75f;
     [SerializeField] AudioClip shootSound;
     [SerializeField] [Range(0,1)] float shootSoundVolume = 0.75f;
+    [SerializeField] int score = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +63,7 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            FindObjectOfType<GameSession>().AddScore(score);
             Die();
         }
     }
